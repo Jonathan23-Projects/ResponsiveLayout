@@ -1,0 +1,356 @@
+/* Global Layout Set-up */
+
+* { 
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  line-height: 1.25em;
+  font-family: 'Josefin+Sans', sans-serif;
+}
+
+#wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  background: #ffffff;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+a:hover {
+  color: #808000;
+}
+
+/* General */
+
+img {
+  max-width: 100%;
+}
+
+.profilePic {
+  width: 60%;
+}
+
+ul {
+  padding: 0 0;
+}
+
+li {
+  list-style: none;
+}
+
+#name {
+  font-size: 1.25em;
+  margin-top: 0;
+  padding-top: 1em;
+}
+
+h1 {
+  font-family: 'Muli%7CRoboto:400,300,500,700,900';
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: bold;  
+}
+
+.title {
+  font-size: .75em;
+  color: #000;
+  font-weight: bold;
+}
+
+p {
+  font-size: .75em;
+  font-style: normal;
+  padding: .5em 1em;
+  color: #808080;
+}
+
+nav li {
+  font-size: .75em;
+  font-weight: bold;
+  padding: 1.25em;
+}
+
+header {
+  margin-top: 2em;
+}
+
+#portfolio {
+  margin-top: 3em;
+  background-color: #f0f0f5;
+  padding-top: 1em;  
+}
+
+#portfolio li {
+  padding: 1em 1em 2em;
+}
+
+#skills {
+  margin: 4em auto;
+  border-bottom: 1px groove #33334d;
+}
+
+#skills li {
+  line-height: 1.5em;
+  font-size: .75em;
+  color: 	#808080;
+  margin-bottom: .5em;
+  padding-top: .5em;
+}
+
+.colLeft {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}  
+  
+.colRight {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+}  
+
+.contactCaption {
+  padding: 1em 0 1.5em;      
+}
+
+.phoneNo {
+  margin-bottom: -1em;  
+}
+
+.email {
+  padding-bottom: 3em;  
+}
+
+footer {
+  position: relative;
+  margin-top: 2em;
+  padding: 0;
+}
+
+.footerName {
+  font-family: 'Muli%7CRoboto:400,300,500,700,900';
+  font-size: .85em;
+  font-weight: bold;
+  visibility: visible;
+  position: absolute;
+  top: -5px;
+  left: -15px;
+}
+
+.footerReturn {
+  font-size: .75em;
+  font-weight: bold;
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.footerNav {
+  font-size: .75em;
+  font-weight: bold;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+/*******************************
+ LARGER SCREEN MEDIA QUERIES
+ ******************************/
+
+@media screen and (min-width: 768px) {
+    
+    nav li {
+      display: inline-block;
+    }
+    
+    header {
+      display: -webkit-flex; 
+     -webkit-flex-direction: row-reverse; 
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    
+    .profilePic {
+      width: 45%;
+      height: 100%;
+    }
+
+    .profileCaption {
+      display: inline-block;
+      vertical-align: top;
+      width: 55%;
+      text-align: left;
+      line-height: 1.5em;
+      font-size: 1em;
+      padding: 0 2em 0 0;
+      margin-top: 0;
+    }
+    
+    .title {
+      font-size: .8em;      
+    }
+    
+    #portfolio {
+      margin-top: 5em;
+      width: 100%;
+    }
+    
+    #portfolio li {
+      width: 49.6666%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 1em 1em 2em;
+    }
+    
+    #portfolio p {
+      width: 75%;
+      margin: 0 auto;
+    }
+    
+    #skills li {
+      font-size: 1em;
+    }
+    
+    .contactCaption {
+      width: 60%;
+      margin: 1em auto;
+      line-height: 1.5em;
+      font-size: 1em;
+    }
+    
+    .phoneNo {
+      margin-bottom: -1.5em;
+      line-height: 1.5em;
+      font-size: 1em;
+    }
+    
+    .email {
+      padding-bottom: 2.5em;
+      line-height: 1.5em;
+      font-size: 1em;
+    }
+    
+    .footerName {
+      font-size: 1em;      
+    }
+    
+    .footerReturn {
+      visibility: hidden;
+    }
+    
+    .footerNav {
+      visibility: visible;
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+    
+    #name {
+      float: left;
+      font-size: 1.5em;
+    }
+    
+    nav ul {
+      float: right;
+      margin: 10px -17px;
+    }
+    
+    nav li {
+      font-size: .80em;
+    }
+    
+    nav {
+      overflow: hidden;      
+    }
+    
+    header {
+      display: -webkit-flex; 
+     -webkit-flex-direction: row-reverse; 
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    
+    .profilePic {
+      width: 45%;
+      height: 100%;
+    }
+
+    .profileCaption {
+      display: inline-block;
+      vertical-align: top;
+      width: 55%;
+      text-align: left;
+      line-height: 1.5em;
+      font-size: 1em;
+      padding: 0 4em 0 0;
+      margin-top: 0;
+    }
+    
+    .title {
+      font-size: .9em;      
+    }
+    
+    #portfolio {
+      margin-top: 6em;
+      width: 100%;
+    }
+    
+    #portfolio li {
+      width: 33%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 1em 1em 2em;
+    }
+    
+    #portfolio p {
+      width: 75%;
+      margin: 0 auto;
+    }
+    
+    #contact {
+      width: 65%;
+      margin: 4em auto;
+    }
+    
+    .contactCaption {
+      width: 60%;
+      margin: 1em auto;
+      line-height: 1.5em;
+      font-size: 1em;
+    }
+    
+    .phoneNo {
+      margin-bottom: -1.5em;
+      line-height: 1.5em;
+      font-size: 1em;
+    }
+    
+    .email {
+      padding-bottom: 2.5em;
+      line-height: 1.5em;
+      font-size: 1em;
+    }
+    
+    .footerName {
+      font-size: 1em;      
+    }
+        
+    .footerReturn {
+      visibility: hidden;
+    }
+    
+    .footerNav {
+      visibility: visible;
+    } 
+}
